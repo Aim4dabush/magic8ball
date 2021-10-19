@@ -1,0 +1,16 @@
+.container-fluid {
+    font-family: 'Alice', serif;
+}
+
+#welcome{
+    background-color: #98D2EB;
+}
+
+#ask{
+    background-color: #EB999C;
+}
+
+#answer{
+    background-color: #EBCD99;
+    height: 100vh;
+}

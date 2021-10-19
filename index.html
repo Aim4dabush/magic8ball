@@ -6,9 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magic 8 Ball Project</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+        crossorigin="anonymous">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center" id="welcome">
+                <h1>Welcome! Have questions? I've Got Answers.</h1>
+            </div>
+            <div class="col-12" id="ask">
+                <label for="question" class="d-flex justify-content-center mt-3">What is your question?</label>
+                <div class="input-group">
+                    <input type="text" class="form-control mb-3" placeholder="Be careful for what you ask for. You just might get it." id="question">
+                    <button class="btn btn-primary mb-3" type="button">Ready to ask!</button>
+                </div>
+            </div>
+            <div class="col-12" id="answer">
+                
+            </div>
+        </div>
+    </div>
 </body>
 </html>
