@@ -13,25 +13,27 @@
         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
         crossorigin="anonymous">
-    <script defer src="script.js"></script>
+        <script defer src="script.js"></script>
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 d-flex justify-content-center" id="welcome">
-                <h1>Welcome! Have questions? I've Got Answers.</h1>
+                <h1>Welcome! Looking For Answers?</h1>
             </div>
-            <div class="col-12" id="ask">
-                <label for="question" class="d-flex justify-content-center mt-3">What is your question?</label>
-                <div class="input-group">
-                    <input type="text" class="form-control mb-3" placeholder="Be careful for what you ask for. You just might get it." id="question">
-                    <button class="btn btn-primary mb-3" type="button">Ready to ask!</button>
+            <div class="col-12 d-flex justify-content-center" id="ask">
+                <div class="input-group mt-3 w-50">
+                    <input type="text" class="form-control mb-3" placeholder="What is your question?" id="question" onkeypress="enterPressEvent(event)">
+                    <button class="btn btn-primary mb-3" type="button" onclick="askQuestion()">Ready to ask!</button>
                 </div>
             </div>
-            <div class="col-12" id="answer">
+            <div class="col-12 d-flex justify-content-center pt-3" id="answer">
                 
             </div>
+            <div class="col-12 d-flex justify-content-center pt-3" id="image">
+                <img src="https://bn1305files.storage.live.com/y4m5uANhIaZv6N1evwPHsSV96tPt24GEEKum44GDB3WjU81PvcLsy6alsQVNsKtM3KdhWm8eRlNsWl1KdV02X23YUDGjYqdQYD95qdYd13k4bz8I1BsGaQqJOHfHCE_G9At17xK4eRleQXMTdkepvRZNdOD5afuLwyUDLqHkVDCh5am91G9jTMO3vaxcgauedh_?width=256&height=256&cropmode=none" alt="" id="eightBall" width="400" height="400">
+            </div>
         </div>
-    </div>
+    </div>  
 </body>
 </html>
