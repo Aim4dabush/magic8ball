@@ -30,10 +30,15 @@ function imageSource(){
     return img.src = magicEightBallSource[randomSource];
 }
 
+//Rest Image
+function resetImage(){
+    const img = document.getElementById('eightBall');
+    return img.src = "https://bn1305files.storage.live.com/y4m5uANhIaZv6N1evwPHsSV96tPt24GEEKum44GDB3WjU81PvcLsy6alsQVNsKtM3KdhWm8eRlNsWl1KdV02X23YUDGjYqdQYD95qdYd13k4bz8I1BsGaQqJOHfHCE_G9At17xK4eRleQXMTdkepvRZNdOD5afuLwyUDLqHkVDCh5am91G9jTMO3vaxcgauedh_?width=256&height=256&cropmode=none"
+}
+
 //Execute getting image and question when clicking the button
 function askQuestion(){
     const text = document.getElementById('question').value;
-    imageSource();
     checkForQuestionMark(text);
     document.getElementById('question').value = null
 }
@@ -49,15 +54,19 @@ function enterPressEvent(key){
 function checkForQuestionMark(question){
     const answer = document.getElementById('answer');
     if(question.length === 0){
+        resetImage();
         return answer.innerText = "You didn't ask anything. Try again";
     }
-    else if(question[question.length - 1] !== '?'){
+    imageSource();
+    
+    if(question[question.length - 1] !== '?'){
         return answer.innerText = question + ' ?';
     }
     else{
         return answer.innerText = question;
     }
 }
+
 
 
 
