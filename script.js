@@ -39,7 +39,7 @@ function resetImage(){
 //Execute getting image and question when clicking the button
 function askQuestion(){
     const text = document.getElementById('question').value;
-    checkForQuestionMark(text);
+    checkQuestion(text);
     document.getElementById('question').value = null
 }
 
@@ -50,10 +50,11 @@ function enterPressEvent(key){
     }
 }
 
-//Check the text to see if it has a question mark
-function checkForQuestionMark(question){
+//Check the text to see if it has a question mark or has numbers
+function checkQuestion(question){
     const answer = document.getElementById('answer');
-    if(question.length === 0){
+    const checkForNum = /^([^0-9]*)$/gm
+    if(question.length === 0 || !checkForNum.test(question)){
         resetImage();
         return answer.innerText = "You didn't ask anything. Try again";
     }
