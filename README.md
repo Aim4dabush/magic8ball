@@ -6,7 +6,7 @@
 - [Magic 8 Ball](#magic-8-ball)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
-    - [Challenge](#challenge)
+    - [Goals](#goals)
     - [What I Learned](#what-i-learned)
   - [Tools](#tools)
     - [Built With](#built-with)
@@ -17,10 +17,10 @@
 
 Re-create the magic 8 ball toy. Ask, shake, and get your answer.
 
-### Challenge
+### Goals
 
-- User types question into input.
-- User presses "Ready to ask!" button to ask question.
+- User types question into an input.
+- User asks the question.
 - Generate random image for answer.
 
 ### What I Learned
