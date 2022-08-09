@@ -45,6 +45,7 @@ Learned how to use `Math.floor` and `Math.random` to generate a random number fr
 
 ## Author
 
-Edward Arasato
-
-- LinkedIn: [https://www.linkedin.com/in/ed-arasato-74614112a/](https://www.linkedin.com/in/ed-arasato-74614112a/)
+- Edward Arasato
+  - Profile Website: [https://aim4dabush.github.io/web-profile/](https://aim4dabush.github.io/web-profile/)
+  - LinkedIn: [https://www.linkedin.com/in/ed-arasato-74614112a/](https://www.linkedin.com/in/ed-arasato-74614112a/)
+  - Github: [https://github.com/Aim4dabush](https://github.com/Aim4dabush)
