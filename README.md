@@ -1,5 +1,5 @@
 # Magic 8 Ball
-[Live Website](https://aim4dabush.github.io/magic8ball/)
+Deployed Site: [https://aim4dabush.github.io/magic8ball/](https://aim4dabush.github.io/magic8ball/)
 
 ## Table of Contents
 
